@@ -13,7 +13,57 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <h1>Hello from HTML</h1>
+    <header class="jumbotron text-center">
+      <h1>Weather Dashboard</h1>
+      <h2>Do you trust the weather today?</h2>
+    </header>
+
+    <main class="main">
+      <section class="p-1">
+        <form class="card p-2 mb-2">
+          <h3 class="text-center">Search Form</h3>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="searchInput"
+              placeholder="Enter city name"
+            />
+            <div class="form-text text-danger">Please enter a city name.</div>
+          </div>
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+        <div class="card p-2 mb-2">
+          <h3 class="text-center">Recent Search</h3>
+          <div class="text-center mb-2">
+            <button class="btn btn-danger">Clear History</button>
+          </div>
+          <div class="list-group">
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              Leeds
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              London
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              Tokyo
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>Weather Info</section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
